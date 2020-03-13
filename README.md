@@ -7,6 +7,6 @@ where <img src="https://render.githubusercontent.com/render/math?math=\beta _0">
 
 ### Ridge Regression 
 By adding a constraint <img src="https://render.githubusercontent.com/render/math?math=\sum _j \beta _j ^2 \leq t">, the parameters <img src="https://render.githubusercontent.com/render/math?math=\beta"> are somewhat constrained. By then varying <img src="https://render.githubusercontent.com/render/math?math=t">, the bias, variance trade-off can be determined and an optimum set of parameters can be found.
-<img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/RidgeLoss.gif" width="400"> <img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/RidgeParams.gif" width="400">
+<img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/RidgeLoss.png" width="400"> <img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/RidgeParams.png" width="400">
 
 
