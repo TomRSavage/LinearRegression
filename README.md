@@ -7,7 +7,9 @@ where <img src="https://render.githubusercontent.com/render/math?math=\beta _0">
 
 ### Ridge Regression 
 By adding a constraint <img src="https://render.githubusercontent.com/render/math?math=\sum _j \beta _j ^2 \leq t">, the parameters <img src="https://render.githubusercontent.com/render/math?math=\beta"> are somewhat constrained. By then varying <img src="https://render.githubusercontent.com/render/math?math=t">, the bias, variance trade-off can be determined and an optimum set of parameters can be found.
+
 <img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/RidgeLoss.png" width="400"> <img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/RidgeParams.png" width="400">
+
 The parameters are seen to vary smoothly. This can be explained by the constraint function limiting the parameters describing a hypersphere in parameter space the parameters must lie within. Assuming the 'best' set of parameters lies outside of this hypersphere, the parameter values at a value of t lie on the boundary. As t is increased and this hypersphere grows in radius , the parameters are smoothly varied on the border of this hypersphere constraint until the optimal set of parameters lie within the hyperspherical contraint. Then the parameters assume a constant value when changing t as the constraint is no longer active. 
 
 ### Lasso Regression 
