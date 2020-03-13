@@ -13,6 +13,7 @@ The parameters are seen to vary smoothly. This can be explained by the constrain
 ### Lasso Regression 
 Lasso regression assumes a similar form to ridge regression however instead of a squared contraint, the constraint limits the sum of the absolute value of the parameters, <img src="https://render.githubusercontent.com/render/math?math=\sum _j |\beta _j|  \leq t"> (sometimes called the Taxicab norm for reasons I won't go into). Instead of a smooth hypersphere, this results in a polyhedrally constrained area in parameter space. Due to this now linear volume, the parameter set on the edge of this constraint is more than likely to lie at some vertex. As t is then varied and the polyhedron grows towards the optimal parameter set, the parameter set on the edge of the constraint is more likely to 'snap' into a new parameter dimension, i.e. move to a different vertex. This explains the more discrete parameter values, and the behaviour that certain parameters don't appear at all in the set until t is sufficiently large. 
 <img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/LassoLoss.png" width="400"> <img align='center' src="https://github.com/TomRSavage/ShrinkageMethods/blob/master/LassoParams.png" width="400">
+How late on a parameter's coefficient is introduced in Lasso regression relates to how 'important' this input is with respect to predicting the output. The sooner the parameter appears, the more important it's respective variable is in predicting the output (in this case amount of prostate specific antigen).
 
 
 
