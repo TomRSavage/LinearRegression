@@ -22,8 +22,11 @@ How late on a parameter is introduced in Lasso regression relates to how 'import
 
 In two dimentions, with two parameters, the relation between parameter space and function space is made clear in the following GIF
 #### Ridge Regression
+
 <img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/RIDGE.gif" width="800">
+
 #### Lasso Regression 
+
 <img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/LASSO.gif" width="800">
 
 
