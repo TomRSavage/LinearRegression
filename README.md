@@ -12,6 +12,10 @@ By adding a constraint <img src="https://render.githubusercontent.com/render/mat
 
 The parameters are seen to vary smoothly. This can be explained by the constraint function limiting the parameters describing a hypersphere in parameter space the parameters must lie within. Assuming the 'best' set of parameters lies outside of this hypersphere, the parameter values at a value of t lie on the boundary. As t is increased and this hypersphere grows in radius , the parameters are smoothly varied on the border of this hypersphere constraint until the optimal set of parameters lie within the hyperspherical contraint. Then the parameters assume a constant value when changing t as the constraint is no longer active. 
 
+For a two dimensional problem, function and parameter space can be visualised easily. 
+
+<img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/RIDGE.gif" width="800">
+
 ### Lasso Regression 
 Lasso regression assumes a similar form to ridge regression however instead of a squared constraint, the constraint limits the sum of the absolute value of the parameters, <img src="https://render.githubusercontent.com/render/math?math=\sum _j |\beta _j|  \leq t"> (sometimes called the Taxicab norm for reasons I won't go into). Instead of a smooth hypersphere, this results in a polyhedrally constrained area in parameter space. Due to this now linear volume, the parameter set on the edge of this constraint is more than likely to lie at a vertex. As t is then varied and the polyhedron grows towards the optimal parameter set, the parameter set on the edge of the constraint is more likely to 'snap' into a new parameter dimension, i.e. move to a different vertex. This explains the more discretized parameter values, and the behaviour that certain parameters don't appear at all in the set until t is sufficiently large. 
 
@@ -19,15 +23,10 @@ Lasso regression assumes a similar form to ridge regression however instead of a
 
 How late on a parameter is introduced in Lasso regression relates to how 'important' this input is with respect to predicting the output. The sooner the parameter appears, the more important it's respective variable is in predicting the output (in this case amount of prostate specific antigen).
 
-
-In two dimentions, with two parameters, the relation between parameter space and function space is made clear in the following GIF
-#### Ridge Regression
-
-<img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/RIDGE.gif" width="800">
-
-#### Lasso Regression 
+Lasso regression for a two dimensional problem.
 
 <img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/LASSO.gif" width="800">
+
 
 
 
