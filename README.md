@@ -20,4 +20,12 @@ Lasso regression assumes a similar form to ridge regression however instead of a
 How late on a parameter is introduced in Lasso regression relates to how 'important' this input is with respect to predicting the output. The sooner the parameter appears, the more important it's respective variable is in predicting the output (in this case amount of prostate specific antigen).
 
 
+In two dimentions, with two parameters, the relation between parameter space and function space is made clear in the following GIF
+#### Ridge Regression
+<img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/RIDGE.gif" width="800">
+#### Lasso Regression 
+<img align='center' src="https://github.com/TomRSavage/LinearRegression/blob/master/LASSO.gif" width="800">
+
+
+
 
